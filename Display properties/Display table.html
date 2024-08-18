@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            h2{
+                background: rgb(107, 21, 107);
+                color: aliceblue;
+                width: 300px;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            table tr:nth-of-type(even)
+            {
+                background: green;
+            }
+            table td:nth-of-type(even)
+            {
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Display table</h2>
+        <table border="1px"
+         width="50%"
+         cellpadding="10px"
+         cellspacing="10px"
+        >
+        <caption>Student details</caption>
+        <colgroup>
+            <col style="width:70px;">
+            <col style="width: 40px;">
+
+        </colgroup>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Sundhar</td>
+                <td>18</td>
+                <td>Chennai</td>               
+            </tr>
+            <tr>
+                <td>Sanjay</td>
+                <td>19</td>
+                <td rowspan="2">Coimbatore</td>
+            </tr>
+            <tr>
+                <td>Gowtham</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Sree</td>
+                <td>20</td>
+                <td rowspan="3">Kerala</td>
+            </tr>
+            <tr>
+                <td>Prasanna</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Suresh</td>
+                <td>19</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                </tr>
+            </tfoot>
+            </tr>
+        </table>
+    </body>
+</html>

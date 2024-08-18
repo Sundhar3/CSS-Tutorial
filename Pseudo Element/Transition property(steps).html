@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            background-color:crimson;
+            transition-property: width,height,background-color;
+            transition-timing-function: linear;
+            transition-duration: 2s;
+            transition-delay: o.2s;
+            /* transition: all o.5s ease-in 1s;*/ 
+            transition: cubic-bezier(cubic-bezier(0.39, 0.575, 0.565, 1));  
+            border: 5px solid blue;         
+        }
+        div:hover{
+            width: 250px;
+            height: 250px;
+            background-color: coral;
+            border: 5px dashed yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Transition property</h2>
+    <div>
+
+    </div>
+</body>
+</html>
+

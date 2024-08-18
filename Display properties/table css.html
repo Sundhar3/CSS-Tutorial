@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Css</title>
+        <style>
+            .table{
+                margin-top: 75px;
+                margin-left: 50px;
+                display: table;
+                width: 70%;
+                border: 1px solid black;
+            }
+            .row{ /* tr */
+                display: table-row;
+            }
+            .col{ /* td */
+                border: 1px solid green;
+                padding: 10px;
+                display: table-cell;
+            }
+            .header{/* same for footer*/
+                display: table-header-group;
+                font-weight: 100px;
+                text-align: center;
+                color: blue;
+            }
+            .footer{
+                display: table-footer-group;
+            }
+            .caption{
+                display: table-caption;
+                text-align: center;
+                font-size: larger;
+                padding: 10px;
+            }
+            .colgroup{
+                display: table-column-group;
+            }
+            .tbl-col{
+                display: table-column;
+            }
+            .col2{
+                background: pink;
+            }
+            .row-group{
+                display: table-row-group;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Table Using CSS</h3>
+        <div class="table">
+            <div class="caption">
+                Student details
+            </div>
+            <div class="colgroup">
+                <div class="tbl-col">col-1</div>
+                <div class="tbl-col col2">col-2</div>
+                <div class="tbl-col">col-3</div>
+            </div>
+            <div class="header">
+            <div class="row">
+            <div class="col">Name</div>
+            <div class="col">Age</div>
+            <div class="col">City</div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col">Sundhar</div>
+        <div class="col">19</div>
+        <div class="col">Coimbatore</div>
+        </div>
+        <div class="row">
+            <div class="col">Suresh</div>
+            <div class="col">20</div>
+            <div class="col">chennai</div>
+        </div>
+        <div class="row">
+            <div class="col">Sanjay</div>
+            <div class="col">20</div>
+            <div class="col">Chennai</div>
+        </div>
+        <div class="row">
+            <div class="col">Gowtham</div>
+            <div class="col">20</div>
+            <div class="col">Bengulur</div>
+        </div>
+        <div class="footer">
+            <div class="col">Total Student</div>
+            <div class="col"></div>
+            <div class="col">4</div>
+        </div>
+        </div>
+    </body> 
+</html>

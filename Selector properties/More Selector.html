@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            .box > p{
+                color: red;
+            }
+            .box + p{
+                color: yellow;
+            }
+            div[class]{
+                color: red;
+            }
+            div[id]{
+                background: green;
+
+            }
+            div[class=inner]{
+                background-color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>More selector</h1>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, numquam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, provident!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aut.</p>
+        <div class="inner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facilis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aperiam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, excepturi.</p>
+        </div>
+    </div>
+    <div id="outer">This is Div</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, qui!</p>
+    
+    </body>
+</html>
