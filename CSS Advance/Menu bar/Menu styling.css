@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/** font.google.com**/
+body{
+    background:cadetblue;
+}
+nav{
+    margin-top: 210px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+    background-color: coral;
+    transform: skew(-20deg);
+}
+nav ul li {
+    display: flex;
+    float: right;
+    border-right: 1px solid blue;
+    box-shadow : 0px 1.92px 1.4px violet;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 0.2s linear;
+} 
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li:hover{
+    color:red;
+    background: blue;
+}
+a{
+    display: block;
+    padding: 10px;
+}
+nav ul li a:first-child{
+    border-radius :5px 5px 5px 5px;
+}
+nav ul li a:nth-of-type(4){
+    border-radius: 10px 10px 10px 10px;
+}
+

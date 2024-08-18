@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    display: inline-block;
+}
+li a{
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(36, 36, 168);
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:auto ;
+    align-items: center;
+    padding: 0 20px;
+    background-color: teal;
+}
+.logo{
+    font-size:30px;
+    color: white;
+    cursor: pointer;
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+}
+.nav-link li a{
+    color: white;
+}
+.nav-link li{
+    padding: 0 10px;
+}
+.nav-link li a:hover{
+    color: rgb(147, 147, 225);
+}
+button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color:rgb(74, 74, 230);
+    color: white;
+}
+

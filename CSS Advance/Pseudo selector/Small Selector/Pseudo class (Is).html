@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        #d1{
+            background-color: aliceblue;
+        }
+        #d2{
+            background-color: rgb(245, 185, 106);
+        }
+      /* #d1 h2,
+       #d1 h3,
+       #d1 h4{
+        color: red;
+       } */
+       #d1 :is(h2,h3,h4){
+        color: blue;
+       }
+       :is(#d1,#d2) h2{
+        color: blueviolet;
+       }
+       :is(#d1,#d2) :is(h2,p){
+        color: rgb(22, 167, 22);
+       }
+       :is(#d1,#d2) h2:hover{
+        color: brown;
+       }
+    </style>
+</head>
+<body>
+    <h1>Pseduo class (IS)</h1>
+    <div id="d1">
+        <h2>Heading-2</h2>
+        <h3>Sub-Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error eveniet itaque obcaecati distinctio officia recusandae aut laborum fugiat temporibus.</p>
+        <h4>Heading-2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore impedit illo blanditiis minima officia, quo itaque ratione.</p>
+    </div>
+    <hr>
+    <div id="d2">
+        <h2>Heading-2</h2>
+        <p><b>Para-1</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ullam fuga non nemo velit, facilis inventore ipsam! Eos, hic dicta!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis vel officiis accusantium praesentium voluptas totam voluptates quam possimus!</p>
+</body>
+</html>

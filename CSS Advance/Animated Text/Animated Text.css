@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 100px;
+    background: linear-gradient(140deg, yellow,red);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 700% 700%;
+    animation: color 3s ease infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
