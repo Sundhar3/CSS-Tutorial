@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 550;
+}
+/*Flat ui color*/
+::selection{
+    background: #eb4d4b;
+    color: white;
+}
+
+.select::selection{
+    background: gray;
+    color: white;
+}
+
+p{
+    padding: 15px;
+    font-size: 20px;
+}
+
+h1{
+    user-select: none;
+}

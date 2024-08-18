@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+</head>
+<style>
+    .container{
+        border: 5px solid black;
+        padding: 10px;
+        display: flex;
+    }
+    .box{
+        border: 2px solid goldenrod;
+        color: rgb(33, 33, 179);
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        background-color: burlywood;
+    }
+    .container{
+        width: 150px;
+        flex-direction:row;
+        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-wrap: wrap-reverse;
+    }
+</style>
+<body>
+    <h4>Flex wrap</h4>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

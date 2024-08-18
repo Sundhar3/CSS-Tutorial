@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(crimson,rgb(80, 139, 181));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(to left,rgb(209, 19, 50),rgb(19, 95, 125));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 600% 600%;
+    animation:change 3s ease infinite ;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text{
+    font-size: 25px;
+    color: grey;
+    display: inline-block;
+    -webkit-text-stroke-width: 0px;
+    text-stroke-width: 0px;
+    position: relative;
+}
+
+.text::before{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: attr(data-letters);
+    overflow: hidden;
+}
+
+.text.top::before{
+    color: tomato;
+    transition: 1s ease-in-out;
+    height: 0;
+    z-index: 1;
+}
+
+.text.top:hover::before{
+    height: 100%;
+}
+
+/*------------------------*/
+
+.text.bottom{
+    color: tomato;
+}
+
+.text.bottom::before{
+    color: gray;
+    transition: 1s ease-in-out;
+    height: 100%;
+    z-index: 1;
+}
+
+.text.bottom:hover::before{
+    height: 0;
+}
+/*---------------------------------*/
+.text.left::before{
+    color: tomato;
+    transition: 1s ease-in-out;
+    width: 0;
+    z-index: 1;
+}
+
+.text.left:hover::before{
+    width: 100%;
+}
+/*----------------------------*/
+.text.right{
+    color: tomato;
+}
+
+.text.right::before{
+    color: gray;
+    transition: 1s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+
+.text.right:hover::before{
+    width: 0;
+}

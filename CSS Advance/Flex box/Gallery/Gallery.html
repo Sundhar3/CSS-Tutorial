@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        .container{
+            display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center; 
+        }
+        .box{
+            padding: 2px;
+            border: 2px dashed white;
+            margin-bottom: 1px;
+            opacity: 0.7;
+        }
+        .box:hover{
+            opacity: 1;
+            transition: .9s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gallery</h2>
+    <div class="container">
+        <div class="box"><img src="1.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="2.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="3.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="4.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="5.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="6.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="7.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="8.jpg" width="250px" height="250px"></div>
+        <div class="box"><img src="9.jpg" width="250px" height="250px"></div>
+    </div>
+</body>
+</html>

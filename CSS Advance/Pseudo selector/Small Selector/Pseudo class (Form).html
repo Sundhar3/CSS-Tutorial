@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        #txt1:focus{
+            outline:none;
+            border: 2px solid greenyellow;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 2px yellow;
+        }
+        input[type="text"]:enabled{
+            border: 2px solid orange;
+        }
+        input[type="text"]:disabled{
+            border: 2px solid blue;
+        }
+        input[type="text"]:required{
+            border: 2px solid red;
+        }
+        input[type="email"]:read-only{
+            border: 2px solid gray;
+        }
+        input[type=text]:valid{
+            outline: none;
+            border: 2px solid green;
+        }
+        input[type="text"]:invalid{
+            outline: none;
+            border: 2px solid red;
+        }
+        input[type=radio]:default{
+            box-shadow: 0 0 0 2px blue;
+        }
+        option:default{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h4>Pseudo class (Form)</h4>
+
+    <label>Focus:</label>
+    <input type="text" id="txt1">
+    <hr>
+    <span>Checked:</span>
+    <input type="checkbox"id="cricket">
+    <label for="cricket">Cricket</label>
+
+    <input type="checkbox" id="football">
+    <label for="football">Football</label>
+
+    <input type="checkbox" id="tennis">
+    <label type="tennis">Tennis</label>
+    <hr>
+
+    <label>Enabled:</label>
+    <input type="text">
+    <br>
+    <label>Disabled:</label>
+    <input type="text" disabled>
+    <br>
+    <label>Required:</label>
+    <input type="text" required>
+    <hr>
+    <label>Readonly:</label>
+    <input type="email" readonly>
+    <hr>
+    <label>Valid: |Invalid: </label>
+    <input type="text" placeholder="Enter username" pattern="[a-z]*"> 
+    <hr>
+    <label>Default:</label>
+    <input type="radio" name="gender" id="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female">
+    <label type="female">Female</label>
+    <hr>
+    <label>Selected:</label>
+    <select>
+    <option value="">Select</option>
+    <option value="c">C</option>
+    <option value="c++">C++</option>
+    <option value="Java">Java</option>
+    <option value="HTMl"Selected>HTML</option>
+    </select>
+</body>
+</html>
